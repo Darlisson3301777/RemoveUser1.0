@@ -52,7 +52,7 @@ def excluir_usuario_e_pasta(username):
             ["rd", "/s", "/q", user_folder], stderr=subprocess.STDOUT
         )
         messagebox.showinfo(
-            "Sucesso", f"Pasta do usuário '{username}' excluída com sucesso. By: Darlisson"
+            "Sucesso", f"Pasta do usuário '{username}' excluída com sucesso."
         )
     except subprocess.CalledProcessError as e:
         messagebox.showerror(
